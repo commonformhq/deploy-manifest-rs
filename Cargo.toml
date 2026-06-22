@@ -8,7 +8,7 @@ description = "Parse, validate, and serialize Deploy Manifest Specification file
 homepage = "https://github.com/hisoka-root/deploy-manifest-rs"
 repository = "https://github.com/hisoka-root/deploy-manifest-rs"
 keywords = ["deploy", "manifest", "deployment", "devops", "dms"]
-categories = ["development-tools::deployment"]
+categories = ["development-tools::build-utils"]
 
 [features]
 default = ["yaml", "toml"]
