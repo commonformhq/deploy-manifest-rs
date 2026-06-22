@@ -1,0 +1,29 @@
+[package]
+name = "deploy-manifest"
+version = "0.1.0"
+edition = "2024"
+authors = ["hisoka <root@hisoka.lol>"]
+license = "MPL-2.0"
+description = "Parse, validate, and serialize Deploy Manifest Specification files"
+homepage = "https://github.com/hisoka-root/deploy-manifest"
+repository = "https://github.com/hisoka-root/deploy-manifest"
+keywords = ["deploy", "manifest", "deployment", "devops", "dms"]
+categories = ["development-tools::deployment"]
+
+[features]
+default = ["yaml", "toml"]
+yaml = ["dep:serde_yaml"]
+json = []
+toml = ["dep:toml"]
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+indexmap = { version = "2", features = ["serde"] }
+thiserror = "2"
+serde_json = "1"
+
+serde_yaml = { version = "0.9", optional = true }
+toml = { version = "0.9", optional = true }
+
+[dev-dependencies]
+serde_yaml = "0.9"
