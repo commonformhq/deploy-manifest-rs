@@ -1,6 +1,6 @@
-# deploy-manifest
+# deploy-manifest.rs
 
-Parse, validate, and serialize Deploy Manifest files.
+Reference Rust implementation of the Deploy Manifest Specification.
 
 ```rust
 use deploy_manifest::DeployManifest;
@@ -75,9 +75,8 @@ JSON is always available — `serde_json` is a required dependency.
 
 ## Specification
 
-The full DMS spec lives in [deploy-manifest.md](deploy-manifest.md). It covers every section (app, runtime, build, start, env, network, storage, services, health, scaling, cron) plus the extension system and validation rules.
+The full DMS spec lives in the [deploy-manifest](https://github.com/hisoka-root/deploy-manifest) repo.
 
 ## License
 
-- **Rust code** — MPL 2.0 ([LICENSE](LICENSE))
-- **Specification** — CC BY-SA 4.0 ([LICENSE-SPEC](LICENSE-SPEC))
+MPL 2.0 ([LICENSE](LICENSE))
