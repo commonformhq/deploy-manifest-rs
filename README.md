@@ -75,7 +75,7 @@ JSON is always available — `serde_json` is a required dependency.
 
 ## Specification
 
-The full DMS spec lives in the [deploy-manifest](https://github.com/hisoka-root/deploy-manifest) repo.
+The full DMS spec lives in the [deploy-manifest](https://github.com/commonformhq/deploy-manifest) repo.
 
 ## License
 
